@@ -8,5 +8,7 @@ In most browsers, right click somewhere on the webpage you want to run the scrip
 
 ## Scripts In This Repository
 
-* [AmazonClearSavedForLater.js](AmazonClearSavedForLater.js) - for use on your shopping cart screen on Amazon.com when looking at the Saved for Later items.  Will press the "delete" link on every item saved for later until there are no items left.  (Actually it'll keep trying to click after there are no items left, you might right to refresh the page when it's done)
-  
+* [AmazonClearSavedForLater.js] - for use on your shopping cart screen on Amazon.com when looking at the Saved for Later items.  Will press the "delete" link on every item saved for later until there are no items left.  (Actually it'll keep trying to click after there are no items left, you might right to refresh the page when it's done)
+
+* [YoutubeGrabTranscript.js] - drop this into your javascript console and the current page's video transcript will dumb to the console log.
+* 
