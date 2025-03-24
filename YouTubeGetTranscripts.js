@@ -3,8 +3,11 @@
  * Running this code from the javascript console in Chrome (and other browsers)
  * will output the entire transcript of the youtube video on the current page.
  */
-
 function grabTranscript() {
+  
+//  if (!window._grabbedTranscript) { 
+//    window._grabbedTranscript = {};
+//  }
   
   function clean(text) {  
     if (!text) return null;
@@ -14,8 +17,18 @@ function grabTranscript() {
     if (!nonEmptyLines.length) return null;
     return nonEmptyLines.join(' ');
  }
+ 
+ function openTranscript() {
+   let btn = document.querySelector('[aria-label="Show transcript"]');
+   if (btn) {
+     btn.click();
+     return true;
+   }
+   else {
+     return false;
+   }
+ }
   
-
   let textParts = [];
   
   // grab title
@@ -26,6 +39,11 @@ function grabTranscript() {
   
   // grab url
   let url = '' + location.href;
+//  if (window._grabbedTranscript[url] === '1') {
+//    console.log('already processed ' + url);
+//    return; // skipping already processed
+//  }
+//  window._grabbedTranscript[url] = '1';
   if (url) {
     textParts.push('Url: ' + url);
   }
@@ -46,7 +64,14 @@ function grabTranscript() {
   textParts.push('');
   let segments = document.querySelectorAll('.segment-text');
   if (!segments || !segments.length) {
-    textParts.push('MAKE SURE YOU EXPAND THE TRANSCRIPT');
+    // open the transcript and retry
+    if (openTranscript()) {
+      setTimeout(grabTranscript, 100);
+      return false;
+    }
+    else {
+      textParts.push('MAKE SURE YOU EXPAND THE TRANSCRIPT');
+    }
   }
   else {
     textParts.push('Transcript:');
@@ -57,7 +82,13 @@ function grabTranscript() {
   }
   
   // output as plain text
-  let outputText = textParts.join('\n');
+  let outputText = textParts.join('\n') + '\n\n---\n\n';
   console.log(outputText);
+  
+  
+  // run the next page automatically when a new video is detected
+  window.onhashchange = function() {
+    setTimeout(grabTranscript, 500);
+  };
 }
 grabTranscript();
