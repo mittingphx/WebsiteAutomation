@@ -1,0 +1,71 @@
+# WebsiteAutomation Coding Style Guide
+
+This document defines the coding style and conventions to be used in this repository.
+
+## General Guidelines
+
+- All scripts should be self-contained and executable by pasting into a browser console
+- Each script should have a descriptive comment header explaining its purpose and usage
+- Use modern JavaScript (ES6+) features where appropriate
+- Maintain consistent indentation and formatting
+
+## JavaScript Conventions
+
+### File Structure
+
+- Begin with a comment block describing the script's purpose
+- Define functions rather than using immediately invoked function expressions
+- Call the main function at the end of the file
+- Group related code into logical sections with comments
+
+### Naming Conventions
+
+- Use `camelCase` for variables and function names
+- Use `UPPER_SNAKE_CASE` for constants
+- Use descriptive names that clearly indicate purpose
+
+### Formatting
+
+- Use 2 spaces for indentation
+- Use single quotes for strings by default
+- Add spaces after keywords and around operators
+- Place opening braces on the same line as control statements
+- Use semicolons at the end of statements
+
+### Code Organization
+
+- Group related constants at the top of functions
+- Use helper functions for clarity and reusability
+- Add comments for complex logic or non-obvious behavior
+- Use blank lines to separate logical sections of code
+
+### DOM Manipulation
+
+- Use descriptive CSS selectors stored in constants
+- Prefer modern DOM APIs (querySelector, etc.)
+- Handle potential null/undefined values when accessing DOM elements
+
+### Error Handling
+
+- Include basic error handling for critical operations
+- Log meaningful error messages to the console
+
+## HTML/CSS Conventions (for generated content)
+
+- Use proper indentation for nested HTML elements
+- Include appropriate doctype and meta tags
+- Use semantic HTML elements where possible
+- Keep CSS rules organized and grouped by purpose
+
+## Documentation
+
+- Include usage instructions in the README.md
+- Document any known limitations or potential issues
+- Provide clear examples of expected behavior
+
+## Security Considerations
+
+- Avoid collecting or transmitting user data
+- Respect website terms of service
+- Include security warnings in documentation
+- Sanitize any user-generated content

@@ -1,14 +1,50 @@
 # WebsiteAutomation
-Scripts for pasting into the javascript console to automate tasks that might take a lot of time if you have a lot of data.
 
-The idea here is to copy the entire file (optionally skipping the description comment at the top) and the code will run immediately after it is pasted into the Javascript Console window.  The progress will be displayed in the console window itself.
+Browser console scripts to automate repetitive web tasks.
 
-## How to Open the Javascript Console window.
-In most browsers, right click somewhere on the webpage you want to run the script against, and choose "Inspect" (near the bottom of the context menu that appears).  This opens the DevTools window.  The "Console" tab is what you are looking for.  You will see a flashing cursor.  Paste your code here and it will start running.  An error will be displayed in red if there is some issue with the code, though many red errors may be part of the normal operation of the script.
+## 🚀 Quick Start
 
-## Scripts In This Repository
+1. Right-click on the target webpage
+2. Select "Inspect" to open DevTools
+3. Click the "Console" tab
+4. Copy and paste the desired script
+5. Watch the console for progress updates
 
-* [AmazonClearSavedForLater.js] - for use on your shopping cart screen on Amazon.com when looking at the Saved for Later items.  Will press the "delete" link on every item saved for later until there are no items left.  (Actually it'll keep trying to click after there are no items left, you might right to refresh the page when it's done)
-* [ChatGPT-ExportSingleChat.js] - downloads the current ChatGPT chat window as an html file
-* [YoutubeGrabTranscript.js] - drop this into your javascript console and the current page's video transcript will dumb to the console log.
-* 
+## 📚 Available Scripts
+
+| Script | Purpose | Website |
+|--------|---------|---------|
+| [AmazonClearSavedForLater.js](./AmazonClearSavedForLater.js) | Bulk delete "Saved for Later" items | Amazon.com |
+| [ChatGPT-ExportSingleChat.js](./ChatGPT-ExportSingleChat.js) | Export current chat as HTML | chat.openai.com |
+| [YouTubeGetTranscripts.js](./YouTubeGetTranscripts.js) | Extract video transcript | YouTube.com |
+
+## ⚙️ Requirements
+
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- JavaScript enabled
+- Access to browser developer tools
+
+## 🔒 Security Guidelines
+
+- Only run scripts from trusted sources
+- Review code before execution
+- Scripts have full webpage access
+- Website ToS may prohibit automation
+- Actions may be irreversible
+- Website updates may break scripts
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+## 📄 License
+
+[MIT License](LICENSE) - Feel free to use and modify the code
+
+## ⚠️ Disclaimer
+
+These scripts are provided "as is" without warranty. Use at your own risk.
