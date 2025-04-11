@@ -27,7 +27,8 @@ This document defines the coding style and conventions to be used in this reposi
 ### Formatting
 
 - Use 2 spaces for indentation
-- Use single quotes for strings by default
+- Use single quotes for JavaScript strings by default
+- Exception: Use double quotes for HTML attributes within JavaScript template literals
 - Add spaces after keywords and around operators
 - Place opening braces on the same line as control statements
 - Use semicolons at the end of statements

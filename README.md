@@ -15,6 +15,7 @@ Browser console scripts to automate repetitive web tasks.
 | Script | Purpose | Website |
 |--------|---------|---------|
 | [AmazonClearSavedForLater.js](./AmazonClearSavedForLater.js) | Bulk delete "Saved for Later" items | Amazon.com |
+| [ChatGPT-ExportAllChats.js](./ChatGPT-ExportAllChats.js) | Export all chats as ZIP archive | chat.openai.com |
 | [ChatGPT-ExportSingleChat.js](./ChatGPT-ExportSingleChat.js) | Export current chat as HTML | chat.openai.com |
 | [YouTubeGetTranscripts.js](./YouTubeGetTranscripts.js) | Extract video transcript | YouTube.com |
 
