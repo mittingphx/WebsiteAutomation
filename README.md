@@ -10,14 +10,27 @@ Browser console scripts to automate repetitive web tasks.
 4. Copy and paste the desired script
 5. Watch the console for progress updates
 
+## 📁 Folder Structure
+
+Scripts are organized in the `scripts/` folder by domain. Each domain folder contains scripts specific to that website. Subdomains are only specified when a script is designed to work exclusively with that subdomain (e.g., `chat.openai.com` vs `openai.com`).
+
 ## 📚 Available Scripts
 
-| Script | Purpose | Website |
-|--------|---------|---------|
-| [AmazonClearSavedForLater.js](./AmazonClearSavedForLater.js) | Bulk delete "Saved for Later" items | Amazon.com |
-| [ChatGPT-ExportAllChats.js](./ChatGPT-ExportAllChats.js) | Export all chats as ZIP archive | chat.openai.com |
-| [ChatGPT-ExportSingleChat.js](./ChatGPT-ExportSingleChat.js) | Export current chat as HTML | chat.openai.com |
-| [YouTubeGetTranscripts.js](./YouTubeGetTranscripts.js) | Extract video transcript | YouTube.com |
+### 🛍️ Amazon.com: E-commerce platform
+| Script | Purpose |
+|--------|---------|
+| [AmazonClearSavedForLater.js](./scripts/amazon.com/AmazonClearSavedForLater.js) | Bulk delete "Saved for Later" items |
+
+### 🤖 chatgpt.com: Large Language Model platform by OpenAI
+| Script | Purpose |
+|--------|---------|
+| [ChatGPT-ExportAllChats.js](./scripts/chatgpt.com/ChatGPT-ExportAllChats.js) | Export all chats as ZIP archive |
+| [ChatGPT-ExportSingleChat.js](./scripts/chatgpt.com/ChatGPT-ExportSingleChat.js) | Export current chat as HTML |
+
+### 🎥 youtube.com: Video sharing platform
+| Script | Purpose |
+|--------|---------|
+| [YouTubeGetTranscripts.js](./scripts/youtube.com/YouTubeGetTranscripts.js) | Extract video transcript |
 
 ## ⚙️ Requirements
 
